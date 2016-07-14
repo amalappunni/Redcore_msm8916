@@ -66,19 +66,14 @@
 #define GTP_WITH_PEN          0
 
 
-#define GTP_DBL_CLK_WAKEUP    0    // double-click wakeup, function together with GTP_SLIDE_WAKEUP
+#define GTP_DBL_CLK_WAKEUP    1    // double-click wakeup, function together with GTP_SLIDE_WAKEUP
 #define GTP_PEN_HAVE_BUTTON   0    // active pen has buttons, function together with GTP_WITH_PEN,add by zengguang 2014.6.24
 #define PHY_BUF_SIZE		32
 #define PROP_NAME_SIZE		24
 #define GOODIX_MAX_CFG_GROUP	10 //modify by pangle at 2014.10.16
 #define GTP_FW_NAME_MAXSIZE	50
-#if defined(CONFIG_QL602_YOUGOU_D_512)
 #define GTP_GESTURE_WAKEUP    1
-#elif defined(CONFIG_QL1008_YUSUN_BL889)
-#define GTP_GESTURE_WAKEUP    1
-#else
-#define GTP_GESTURE_WAKEUP    0
-#endif
+
 
 #define GTP_DEBUG_ON          0
 #define GTP_DEBUG_ARRAY_ON    0
